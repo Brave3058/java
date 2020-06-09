@@ -1,6 +1,5 @@
 package abstractclasses;
 
-import java.security.PublicKey;
 import java.time.LocalDate;
 
 public class Employee extends Person {
