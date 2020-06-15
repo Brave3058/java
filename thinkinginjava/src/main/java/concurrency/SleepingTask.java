@@ -1,8 +1,8 @@
+package concurrency;
+
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
-
-import concurrency.LiftOff;
 
 public class SleepingTask extends LiftOff {
     public void run() {
