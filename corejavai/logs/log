@@ -1,0 +1,10 @@
+11:10:02,737  INFO PairTest2:19 - min = []
+11:10:02,737  INFO PairTest2:20 - max = []
+11:13:07,948  INFO PairTest2:19 - min = 1815-12-10
+11:13:07,964  INFO PairTest2:20 - max = 1910-06-22
+11:15:10,668  INFO PairTest2:19 - min = 1815-12-10
+11:15:10,668  INFO PairTest2:20 - max = 1910-06-22
+20200712 11:16:21,457  INFO PairTest2:19 - min = 1815-12-10
+20200712 11:16:21,457  INFO PairTest2:20 - max = 1910-06-22
+20200712 11:19:05,953 [generic.PairTest2.generic.PairTest2.main(PairTest2.java:19)] min = 1815-12-10
+20200712 11:19:05,953 [generic.PairTest2.generic.PairTest2.main(PairTest2.java:20)] max = 1910-06-22
