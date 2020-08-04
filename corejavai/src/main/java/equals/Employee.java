@@ -32,8 +32,11 @@ public class Employee {
         salary += raise;
     }
 
+    @Override
     public boolean equals(Object otherObject) {
-        if (this == otherObject) return true;
+        if (this == otherObject) {
+            return true;
+        }
         if (otherObject == null) return false;
         if (getClass() != otherObject.getClass()) return false;
         Employee other = (Employee) otherObject;

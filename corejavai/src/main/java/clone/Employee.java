@@ -15,6 +15,12 @@ public class Employee implements Cloneable {
         this.hireDay = new Date();
     }
 
+    public Employee(String name) {
+        this.name = name;
+        this.hireDay = new Date();
+    }
+
+    @Override
     public Employee clone() throws CloneNotSupportedException {
         Employee cloned = (Employee) super.clone();
         cloned.hireDay = (Date) hireDay.clone();
@@ -43,18 +49,27 @@ public class Employee implements Cloneable {
         salary += raise;
     }
 
+    @Override
     public boolean equals(Object otherObject) {
-        if (this == otherObject) return true;
-        if (otherObject == null) return false;
-        if (getClass() != otherObject.getClass()) return false;
+        if (this == otherObject) {
+            return true;
+        }
+        if (otherObject == null) {
+            return false;
+        }
+        if (getClass() != otherObject.getClass()) {
+            return false;
+        }
         Employee other = (Employee) otherObject;
         return Objects.equals(name, other.name) && salary == other.salary && Objects.equals(hireDay, other.hireDay);
     }
 
+    @Override
     public int hashCode() {
         return Objects.hash(name, salary, hireDay);
     }
 
+    @Override
     public String toString() {
         return getClass().getName() + "[name=" + name + ",salary=" + salary + ",hireDay=" + hireDay + "]";
     }

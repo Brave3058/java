@@ -8,9 +8,14 @@ public class Manager extends Employee {
         bonus = 0;
     }
 
+    @Override
     public double getSalary() {
         double baseSalary = super.getSalary();
         return baseSalary + bonus;
+    }
+
+    public double getBonus() {
+        return bonus;
     }
 
     public void setBonus(double b) {
