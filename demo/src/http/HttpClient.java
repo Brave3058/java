@@ -61,6 +61,8 @@ public class HttpClient {
                 }
                 result = sbf.toString();
             }
+            is.close();
+            br.close();
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -4,16 +4,18 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import until.ILogFactory;
 
-public class DateDemo {
-    private static final Logger logger = LoggerFactory.getLogger(DateDemo.class);
+public class DateDemo implements ILogFactory {
 
-    public static void main(String[] args) throws ParseException {
+    @Test
+    public void main() throws ParseException {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         String da = "2019-06-12";
         Date date = sdf.parse(da);
-        logger.info("{}",date);
+        log.info("{}", date);
     }
 }
